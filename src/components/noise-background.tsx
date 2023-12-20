@@ -4,7 +4,11 @@ export function NoiseBackground() {
 			<title>grainy texture</title>
 
 			<filter id="noiseFilter">
-				<feTurbulence type="turbulence" baseFrequency={0.7} />
+				<feTurbulence
+					type="turbulence"
+					baseFrequency={0.45}
+					stitchTiles="stitch"
+				/>
 			</filter>
 		</svg>
 	)
