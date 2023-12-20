@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { NoiseBackground } from '@/components/noise-background'
+import { Header } from '@/components/header'
 import { inter, firaMono } from '@/styles/font'
 
 export const metadata: Metadata = {
@@ -18,6 +19,8 @@ export default function RootLayout({
 			<body
 				className={`${inter.variable} ${firaMono.variable} font-sans min-h-dvh text-foreground bg-background before:absolute before:content-[''] before:inset-0 before:min-h-full before:min-w-full before:noise before:bg-background before:opacity-10 before:-z-10`}
 			>
+				<Header />
+
 				{children}
 				<NoiseBackground />
 			</body>
