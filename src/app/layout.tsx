@@ -1,12 +1,7 @@
-// DEPENDENCY
-import type { Metadata } from "next";
-
-// STYLE
-import "./globals.css";
-
-// ASSET
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from 'next'
+import './globals.css'
+import { NoiseBackground } from '@/components/noise-background'
+import { inter, firaMono } from '@/styles/font'
 
 export const metadata: Metadata = {
 	title: "dicebugging",
@@ -16,11 +11,15 @@ export const metadata: Metadata = {
 export default function RootLayout({
 	children,
 }: {
-	children: React.ReactNode;
+	children: React.ReactNode
 }) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>{children}</body>
+			<body
+				className={`${inter.variable} ${firaMono.variable} font-sans min-h-dvh text-foreground bg-background`}
+			>
+				{children}
+			</body>
 		</html>
-	);
+	)
 }

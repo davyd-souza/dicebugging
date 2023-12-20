@@ -8,7 +8,12 @@ const config: Config = {
 		'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				sans: 'var(--font-inter)',
+				display: 'var(--font-fira_mono)',
+			},
+		},
 	},
 	plugins: [
 		plugin(({ addUtilities }) => {
