@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import plugin from 'tailwindcss/plugin'
 
 const config: Config = {
 	content: [
@@ -9,6 +10,14 @@ const config: Config = {
 	theme: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [
+		plugin(({ addUtilities }) => {
+			addUtilities({
+				'.noise': {
+					filter: 'url(#noiseFilter)',
+				},
+			})
+		}),
+	],
 }
 export default config
