@@ -3,6 +3,7 @@ import './globals.css'
 import { NoiseBackground } from '@/components/noise-background'
 import { Header } from '@/components/header'
 import { inter, firaMono } from '@/styles/font'
+import '@/lib/dayjs'
 
 export const metadata: Metadata = {
 	title: 'dicebugging',
