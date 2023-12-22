@@ -22,7 +22,8 @@
 			"a11y": {
 				"noAriaUnsupportedElements": "error",
 				"useValidAriaProps": "error",
-				"noRedundantAlt": "warn"
+				"noRedundantAlt": "warn",
+				"noSvgWithoutTitle": "warn"
 			},
 			"correctness": {
 				"noUnusedVariables": "error"
