@@ -9,4 +9,32 @@
 
     --primary: 46 97% 65%;
   }
+
+  /* SCROLLBAR STYLE */
+  ::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 100vw;
+    margin-block: 0.5em;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--primary));
+    border-radius: 100vw;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--primary));
+  }
+
+  @supports (scrollbar-color: red blue) {
+    * {
+      scrollbar-color: hsl(var(--primary)) transparent;
+      scrollbar-width: thin;
+    }
+  }
 }
