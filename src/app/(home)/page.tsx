@@ -24,6 +24,9 @@ export default async function HomePage() {
 		{
 			method: 'GET',
 			headers,
+			next: {
+				revalidate: 60 * 10, // 10 minutes
+			},
 		},
 	).then((res) => res.json())
 
