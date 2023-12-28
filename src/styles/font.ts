@@ -8,7 +8,7 @@ export const inter = Inter({
 })
 
 export const firaMono = Fira_Mono({
-	weight: ['700'],
+	weight: ['400', '700'],
 	subsets: ['latin'],
 	display: 'swap',
 	variable: '--font-fira_mono',
