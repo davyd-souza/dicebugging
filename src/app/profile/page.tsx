@@ -8,9 +8,9 @@ export default function ProfilePage() {
 
 	return (
 		<main className="max-w-3xl mx-auto px-2 md:px-0 space-y-4">
-			<section className="flex items-center gap-4">
+			<section className="flex flex-col items-center gap-4 md:flex-row">
 				<Image
-					className="rounded-full"
+					className="rounded-full size-40 md:size-48"
 					src="https://github.com/davyd-souza.png"
 					width={192}
 					height={192}
@@ -18,13 +18,15 @@ export default function ProfilePage() {
 				/>
 
 				<div className="flex-1">
-					<h2 className="text-primary font-display text-2xl font-bold">
+					<h2 className="text-primary font-display text-2xl font-bold text-center md:text-left">
 						Davyd Souza
 					</h2>
-					<p className="text-neutral-400 font-display">🇧🇷 São Paulo</p>
+					<p className="text-neutral-400 font-display text-center md:text-left">
+						🇧🇷 São Paulo
+					</p>
 				</div>
 
-				<ul className="flex flex-col gap-4">
+				<ul className="flex flex-row justify-center gap-4 flex-wrap md:flex-col ">
 					<li>
 						<Link
 							className="flex gap-2 items-center hover:text-primary transition-colors"
