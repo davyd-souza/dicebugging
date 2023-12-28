@@ -1,6 +1,21 @@
-import { defineDocumentType } from 'contentlayer/source-files'
+import { defineDocumentType, type ComputedFields } from 'contentlayer/source-files'
 import { spawn } from 'node:child_process'
 import { makeSource } from 'contentlayer/source-remote-files'
+import rehypeAutolinkHeadings, { Options as RehypeAutoLinkHeadginsOptions } from 'rehype-autolink-headings'
+import rehypePrettyCode, { Options as RehypePrettyCodeOptions } from 'rehype-pretty-code'
+import rehypeSlug from 'rehype-slug'
+import remarkGfm from 'remark-gfm'
+
+const computedFields: ComputedFields = {
+  slug: {
+    type: 'string',
+    resolve: (doc) => `/${doc._raw.flattenedPath}`,
+  },
+  slugAsParams: {
+    type: 'string',
+    resolve: (doc) => doc._raw.flattenedPath.split('/').slice(1).join('/')
+  }
+}
 
 const Post = defineDocumentType(() => ({
   name: 'Post',
@@ -20,6 +35,7 @@ const Post = defineDocumentType(() => ({
       required: true
     }
   },
+  computedFields
 }))
 
 const syncContentFromGit = async (contentDir: string) => {
@@ -76,10 +92,39 @@ const runBashCommand = (command: string) =>
     })
   })
 
+const rehypePrettyCodeOptions: RehypePrettyCodeOptions = {
+  theme: 'dracula',
+  onVisitLine(node) {
+    if (node.children.length === 0) {
+      node.children = [{ type: 'text', value: ' '}]
+    }
+  },
+  onVisitHighlightedLine(node) {
+    node.properties.className?.push('line--highlited')
+  }
+}
+
+const rehypeAutolinkHeadingsOptions: RehypeAutoLinkHeadginsOptions = {
+  properties: {
+    className: ['subheading-anchor'],
+    ariaLabel: 'Link to section'
+  }
+}
+
 export default makeSource({
   syncFiles: syncContentFromGit,
   contentDirPath: 'src/content',
   contentDirInclude: ['posts'],
   documentTypes: [Post],
   disableImportAliasWarning: true,
+  mdx: {
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: [
+      rehypeSlug,
+      rehypeAutolinkHeadings,
+      // @ts-expect-error
+      [rehypePrettyCode, rehypePrettyCodeOptions],
+      [rehypeAutolinkHeadings, rehypeAutolinkHeadingsOptions]
+    ]
+  }
 })
