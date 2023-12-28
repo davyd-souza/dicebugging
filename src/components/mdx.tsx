@@ -1,3 +1,6 @@
+import { useMDXComponent } from 'next-contentlayer/hooks'
+import Image from 'next/image'
+import Link from 'next/link'
 import {
 	AnchorHTMLAttributes,
 	BlockquoteHTMLAttributes,
@@ -6,9 +9,6 @@ import {
 	TdHTMLAttributes,
 	ThHTMLAttributes,
 } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useMDXComponent } from 'next-contentlayer/hooks'
 
 import { cn } from '@/lib/cn'
 

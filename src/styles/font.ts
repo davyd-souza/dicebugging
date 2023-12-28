@@ -1,4 +1,4 @@
-import { Inter, Fira_Mono } from 'next/font/google'
+import { Fira_Mono, Inter } from 'next/font/google'
 
 export const inter = Inter({
 	weight: ['400', '700'],

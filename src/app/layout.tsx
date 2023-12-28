@@ -1,10 +1,10 @@
-import type { Metadata } from 'next'
-import './globals.css'
-import { NoiseBackground } from '@/components/noise-background'
 import { Header } from '@/components/header'
-import { inter, firaMono } from '@/styles/font'
+import { NoiseBackground } from '@/components/noise-background'
 import '@/lib/dayjs'
+import { firaMono, inter } from '@/styles/font'
+import type { Metadata } from 'next'
 import 'remixicon/fonts/remixicon.css'
+import './globals.css'
 
 export const metadata: Metadata = {
 	title: 'dicebugging',
