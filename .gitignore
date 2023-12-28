@@ -38,4 +38,4 @@ next-env.d.ts
 
 # contentlayer
 .contentlayer
-src/content/*
+src/content/posts/
