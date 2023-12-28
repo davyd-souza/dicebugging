@@ -28,6 +28,9 @@ const config: Config = {
 				'.noise': {
 					filter: 'url(#noiseFilter)',
 				},
+				'.text-backdrop': {
+					textShadow: '2px 2px 0 hsl(var(--primary) / 0.3)',
+				},
 			})
 		}),
 	],

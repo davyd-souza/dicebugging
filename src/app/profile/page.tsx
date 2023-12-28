@@ -29,7 +29,7 @@ export default function ProfilePage() {
 				<ul className="flex flex-row justify-center gap-4 flex-wrap md:flex-col ">
 					<li>
 						<Link
-							className="flex gap-2 items-center hover:text-primary transition-colors"
+							className="flex gap-2 items-center transition-colors hover:text-primary focus-visible:text-primary"
 							href="https://twitter.com/odeisouza"
 							target="_blank"
 						>
@@ -39,17 +39,17 @@ export default function ProfilePage() {
 					</li>
 					<li>
 						<Link
-							className="flex gap-2 items-center hover:text-primary transition-colors"
+							className="flex gap-2 items-center transition-colors hover:text-primary focus-visible:text-primary"
 							href="https://linkedin.com/in/davyd-souza"
 							target="_blank"
 						>
 							<i className="ri-linkedin-line text-primary text-lg leading-none" />
-							in/davyd--souza
+							in/davyd-souza
 						</Link>
 					</li>
 					<li>
 						<Link
-							className="flex gap-2 items-center hover:text-primary transition-colors"
+							className="flex gap-2 items-center transition-colors hover:text-primary focus-visible:text-primary"
 							href="https://github.com/davyd-souza"
 							target="_blank"
 						>
@@ -59,7 +59,7 @@ export default function ProfilePage() {
 					</li>
 					<li>
 						<Link
-							className="flex gap-2 items-center hover:text-primary transition-colors"
+							className="flex gap-2 items-center transition-colors hover:text-primary focus-visible:text-primary"
 							href="https://discordapp.com/users/142311279560884224"
 							target="_blank"
 						>
