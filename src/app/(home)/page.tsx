@@ -8,6 +8,7 @@ export default async function HomePage() {
   const posts = allPosts
 
 	return (
+		<main className="max-w-3xl mx-auto px-2 md:px-0 space-y-8">
 			{posts.map(({ _id, _raw, body, description, created_at, title, slug }) => (
 				<article key={_id} className="grid gap-2">
 					<header>
