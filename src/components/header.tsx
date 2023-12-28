@@ -6,7 +6,7 @@ export function Header() {
 		<header className="mx-auto max-w-3xl py-4 px-2 md:px-0 flex justify-between items-center">
 			<Link
 				href="/"
-				className="font-display font-bold text-xl text-primary md:text-3xl hover:cursor-pointer"
+				className="font-display font-bold text-xl text-primary md:text-2xl hover:cursor-pointer"
 			>
 				dicebugging
 			</Link>
