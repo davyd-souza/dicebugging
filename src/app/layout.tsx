@@ -18,7 +18,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${inter.variable} ${firaMono.variable} font-sans min-h-dvh text-foreground bg-background before:absolute before:content-[''] before:inset-0 before:min-h-full before:min-w-full before:noise before:bg-background before:opacity-10 before:-z-10`}
+				className={`${inter.variable} ${firaMono.variable} relative font-sans min-h-dvh text-foreground bg-background before:absolute before:inset-0 before:content-[''] before:min-h-dvh before:min-w-full before:noise before:opacity-20 before:-z-10`}
 			>
 				<Header />
 
