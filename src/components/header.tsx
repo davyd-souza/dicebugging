@@ -13,7 +13,7 @@ export function Header() {
 
 			<Link
 				href="/profile"
-				className="font-display inline-flex gap-2 items-center"
+				className="font-display inline-flex gap-2 items-center font-bold"
 			>
 				by
 				<Image
