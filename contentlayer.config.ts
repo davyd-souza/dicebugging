@@ -53,7 +53,7 @@ const Code = defineDocumentType(() => ({
 
 const syncContentFromGit = async (contentDir: string) => {
 	const syncRun = async () => {
-		const gitUrl = `https://${process.env.GITHUB_TOKEN}@github.com/davyd-souza/dicebugging-posts.git`
+		const gitUrl = `https://${process.env.GITHUB_TOKEN}@${process.env.GITHUB_POSTS_URL}`
 
 		await runBashCommand(`
       if [ -d  "${contentDir}/posts" ];
