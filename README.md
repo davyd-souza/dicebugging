@@ -54,7 +54,7 @@
 - [x] Responsiviness
 - [x] Build markdown pages with <a href="https://contentlayer.dev/" target="_blank">Contentlayer</a>
 - [ ] Get link to headings on posts
-- [ ] Image optimization
+- [x] Image optimization
 - [ ] Change theme
 - [ ] Display date and time to read on post
 - [ ] Post label
