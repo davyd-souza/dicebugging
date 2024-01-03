@@ -1,11 +1,9 @@
-
 <div align='center'>
   <h1>Dicebugging</h1>
   <!-- <img src="https://placehold.co/800x400"></img> -->
   🚧🚧 Work in Progress 🚧🚧
   <p>Share your knowledge with everyone!</p>
 </div>
-
 
 <div>
   <h2 id="table-contents">📋 Table of Contents</h2>
@@ -47,34 +45,34 @@
 <div>
   <h2 id="features">🎯 Features</h2>
 
-  <ul>
-    <li><input type="checkbox" checked />Display posts</li>
-    <li><input type="checkbox" checked /><a href="create-post">Create post</a></li>
-    <li><input type="checkbox" checked />SEO optimization</li>
-    <li><input type="checkbox" checked />Display time it takes to read dynamically</li>
-    <li><input type="checkbox" checked />Profile page</li>
-    <li><input type="checkbox" checked />Pretty code block formatting</li>
-    <li><input type="checkbox" checked />Responsiviness</li>
-    <li><input type="checkbox" checked />Build markdown pages with <a href="https://contentlayer.dev/" target="_blank">Contentlayer</a></li>
-    <li><input type="checkbox" />Get link to headings on posts</li>
-    <li><input type="checkbox" />Image optimization</li>
-    <li><input type="checkbox" />Change theme</li>
-    <li><input type="checkbox" />Display date and time to read on post</li>
-    <li><input type="checkbox" />Post label</li>
-    <li><input type="checkbox" />Make it a template</li>
-  </ul>
+- [x] Display posts
+- [x] <a href="create-post">Create post</a>
+- [x] SEO optimization
+- [x] Display time it takes to read dynamically
+- [x] Profile page
+- [x] Pretty code block formatting
+- [x] Responsiviness
+- [x] Build markdown pages with <a href="https://contentlayer.dev/" target="_blank">Contentlayer</a>
+- [ ] Get link to headings on posts
+- [ ] Image optimization
+- [ ] Change theme
+- [ ] Display date and time to read on post
+- [ ] Post label
+- [ ] Make it a template
+
 </div>
 
 <div>
   <h2 id="how-to-use">🛠️ How to use</h2>
 
-  🚧🚧 Work in Progress 🚧🚧
+🚧🚧 Work in Progress 🚧🚧
+
 </div>
 
 <div>
   <h2 id="techs">💻 Technologies</h2>
 
-  <ul style="list-style: none; padding: 0;">
+  <ul>
     <li><a href="https://nextjs.org/" target="_blank"><img src="https://img.shields.io/badge/Next.JS-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.JS"/></a></li>
     <li><a href="https://tailwindcss.com/" target="_blank"><img src="https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" /></a></li>
     <li><a href="https://www.typescriptlang.org/" target="_blank"><img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a></li>
